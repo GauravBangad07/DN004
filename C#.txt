@@ -1,0 +1,68 @@
+ Console.WriteLine("Enter stud age");
+            short StuAge = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Enter stud Mark");
+            float stuMark = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Name=" + stuName);
+            Console.WriteLine("Age=" + StuAge);
+            Console.WriteLine("MArk=" + stuMark);
+        }
+        static void Main(string[] args)
+        {
+            Program obj = new Program();
+          //  obj.display();
+            float engMark, matMark;
+            Console.WriteLine("Enter English Marks");
+            engMark = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Enter Maths Marks");
+            matMark = Convert.ToSingle(Console.ReadLine());
+         float avgscore=   obj.calculate(engMark,matMark );
+          string res=  obj.rank(engMark, matMark);
+            Console.WriteLine(res+ " " +avgscore );
+            Console.ReadKey();
+        }
+    }
+from Super User 060 to everyone:    5:54 PM
+class Program
+    {
+        string rank(float eng, float mat)
+        {
+            float rankk = eng * mat;
+            Console.WriteLine("rANK="+rankk);
+            return "good bye";
+        }
+from Super User 060 to everyone:    5:54 PM
+ float calculate(float eng, float mat)
+        {            
+           float avgMArk = (eng + mat) / 2;
+           return avgMArk ;
+        }
+from Super User 060 to everyone:    5:54 PM
+void display()
+        {
+            Console.WriteLine("Enter name of stud");
+            string stuName = Console.ReadLine();
+            Console.WriteLine("Enter stud age");
+            short StuAge = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Enter stud Mark");
+            float stuMark = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Name=" + stuName);
+            Console.WriteLine("Age=" + StuAge);
+            Console.WriteLine("MArk=" + stuMark);
+        }
+from Super User 060 to everyone:    5:54 PM
+ static void Main(string[] args)
+        {
+            Program obj = new Program();
+          //  obj.display();
+            float engMark, matMark;
+            Console.WriteLine("Enter English Marks");
+            engMark = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Enter Maths Marks");
+            matMark = Convert.ToSingle(Console.ReadLine());
+         float avgscore=   obj.calculate(engMark,matMark );
+          string res=  obj.rank(engMark, matMark);
+            Console.WriteLine(res+ " " +avgscore );
+            Console.ReadKey();
+        }
+    }
+}
